@@ -32,18 +32,8 @@ public class CircularlyLinkedList<E> {
 	} // constructs an initially empty list
 
 	// access methods
-	
-	// Exercise R.3-10
 	public int size() {
-		// codes to count size of nodes
-		int a = 0;
-		for (Node n = tail.getNext(); n != tail; n = n.getNext()) {
-			System.out.println(n.getElement()); // trace value of Node n
-			a++;
-			System.out.println(a); // trace value of a
-		}
-		
-		return a;
+		return size;
 	}
 
 	public boolean isEmpty() {
@@ -91,7 +81,7 @@ public class CircularlyLinkedList<E> {
 		if (head == tail)
 			tail = null; // must be the only node left
 		else
-			tail.setNext(head.getNext()); // removes îheadî from the list
+			tail.setNext(head.getNext()); // removes ‚Äùhead‚Äù from the list
 		size--;
 		return head.getElement();
 	}
