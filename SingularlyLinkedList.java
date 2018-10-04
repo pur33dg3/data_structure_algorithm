@@ -38,29 +38,8 @@ public class SingularlyLinkedList<E> {
 	// without using 'size' attribute/variable
 	// hint: use a loop until it reaches null
 	
-	// Exercise R-3.6
-	public E getSecondToTheLast() {
-		E secondToTheLast = null;
-		Node n = head;
-		for (int i = 0; i < size-1 ; i++) {
-			secondToTheLast = (E) n.getElement();
-			//System.out.println(secondToTheLast);
-			n = n.getNext();
-		}
-		
-		return secondToTheLast;
-	}
-	
-	
-	// Exercise R-3.9
 	public int size() {
 		return 0;
-	}
-	
-	// Exercise R.3-12
-	public void rotate(){
-		// codes to rotate list...
-		
 	}
 	
 	public boolean isEmpty() {
