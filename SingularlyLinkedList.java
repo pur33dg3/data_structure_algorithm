@@ -39,7 +39,7 @@ public class SingularlyLinkedList<E> {
 	// hint: use a loop until it reaches null
 	
 	public int size() {
-		return 0;
+		return size;
 	}
 	
 	public boolean isEmpty() {
